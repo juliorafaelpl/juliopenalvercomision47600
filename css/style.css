@@ -95,7 +95,7 @@ footer {
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 80px);
-    width: ;
+
 }
 
 #ldgContent .venta {
@@ -177,6 +177,7 @@ footer {
     background: var(--i);
     background-size: cover;
     margin-bottom: 20px;
+    --i:url(../img/manicure2.jpg);
 }
 
 .pedicure {
@@ -185,6 +186,7 @@ footer {
     background: var(--ii);
     background-size: cover;
     margin-bottom: 20px;
+    --ii:url(../img/pedicure1.jpg);
 }
 
 .esmaltado {
@@ -193,6 +195,7 @@ footer {
     background: var(--iii);
     background-size: cover;
     margin-bottom: 20px;
+    --iii:url(../img/manicure1.jpg);
 }
 
 .otrosServicios {
@@ -201,6 +204,7 @@ footer {
     background: var(--iv);
     background-size: cover;
     margin-bottom: 20px;
+    --iv:url(../img/otrosServicios.jpg);
 }
 
 .content {
@@ -250,8 +254,6 @@ a {
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-    
-
 }
 
 .promos__tarjeta--rosa {
@@ -289,7 +291,6 @@ a {
     color: black;
     text-align: center;
     font-style: italic;
-    font-size: ;
 }
 
 .compraCombos {
@@ -298,6 +299,7 @@ a {
     background: var(--a);
     background-size: cover;
     margin-bottom: 20px;
+    --a:url(../img/arma-tu-combo.png);
 }
 
 .amiagasAhorran {
@@ -306,6 +308,7 @@ a {
     background: var(--b);
     background-size: cover;
     margin-bottom: 20px;
+    --b:url(../img/ahorra-entre-amigas.png);
 }
 
 .content {
@@ -320,8 +323,7 @@ a {
     transition: .5s;
 }
 
-.content h2,
-a {
+.content h2, a {
     color: black;
     text-align: center;
     font-size: medium;
