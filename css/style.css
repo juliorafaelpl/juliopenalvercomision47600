@@ -84,6 +84,7 @@ footer {
     color: white;
     text-align: center;
     width: 100%;
+    height: 120px;
 }
 
 /*HTML INDEX*/
@@ -129,247 +130,83 @@ footer {
     box-shadow: 0 0 8px rgb(0 0 0 / 80%);
 }
 
-#quienesSomos{
+#quienesSomos {
     padding: 1rem;
     text-align: center;
 }
 
 /*HTML SERVICIOS*/
 
-#portfolio {
-    background-color: #F0DBDB;
-}
 
-.servicios {
-    display: flex;
+.portfolio__box{
+    display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 60%;
+    width: 80vw;
+    height: 100%;
+    gap: 50px;
+    justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.tarjeta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 400px;
-    background: #FEFCF3;
-    border-radius: 15px;
-    padding: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
-    box-shadow: 2px 2px rgba(136, 133, 133, 0.747);
 }
 
-.service__titulos {
-    margin-bottom: 30px;
-}
-
-.manicure {
-    width: 200px;
-    height: 200px;
-    background: var(--i);
-    background-size: cover;
-    margin-bottom: 20px;
-    --i:url(../img/manicure2.jpg);
-}
-
-.pedicure {
-    width: 200px;
-    height: 200px;
-    background: var(--ii);
-    background-size: cover;
-    margin-bottom: 20px;
-    --ii:url(../img/pedicure1.jpg);
-}
-
-.esmaltado {
-    width: 200px;
-    height: 200px;
-    background: var(--iii);
-    background-size: cover;
-    margin-bottom: 20px;
-    --iii:url(../img/manicure1.jpg);
-}
-
-.otrosServicios {
-    width: 200px;
-    height: 200px;
-    background: var(--iv);
-    background-size: cover;
-    margin-bottom: 20px;
-    --iv:url(../img/otrosServicios.jpg);
-}
-
-.content {
-    width: 100%;
-    height: 100%;
+.portfolio__item{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgba(253, 252, 252, 0.4);
-    opacity: 0;
-    transition: .5s;
-}
-
-.content h2,
-a {
-    color: black;
-}
-
-.manicure:hover .content {
-    opacity: 1;
-}
-
-.pedicure:hover .content {
-    opacity: 1;
-}
-
-.esmaltado:hover .content {
-    opacity: 1;
-}
-
-.otrosServicios:hover .content {
-    opacity: 1;
-}
-
-.servicios .tarjeta .descrip {
-    word-spacing: 1px;
-    text-align: justify;
+    background-color: #fdd7e0;
+    box-shadow: 0 0 8px rgb(0 0 0 / 80%);
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    column-gap: 10px;
+    border-radius: 10px;
 }
 
 
 /*HTML PROMOCIONES*/
 
-#ldgOfertas{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-}
-
-.promos__tarjeta--rosa {
+#ldgOfertas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 400px;
-    background: linear-gradient(#FB859D,#FB9CB4,#FB6986,#f07b90);
-    border-radius: 15px;
-    padding: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    box-shadow: 2px 2px rgba(136, 133, 133, 0.747);
-}
-
-.promos__tarjeta--blue {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 400px;
-    background: linear-gradient(#32B0E4,#1CA8DF,#3685B6,#4081C4);
-    border-radius: 15px;
-    padding: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    box-shadow: 2px 2px rgba(136, 133, 133, 0.747);
-}
-
-.promo__titulos {
-    margin-bottom: 30px;
-    color: black;
-    text-align: center;
-    font-style: italic;
-}
-
-.compraCombos {
-    width: 200px;
-    height: 200px;
-    background: var(--a);
-    background-size: cover;
-    margin-bottom: 20px;
-    --a:url(../img/arma-tu-combo.png);
-}
-
-.amiagasAhorran {
-    width: 200px;
-    height: 200px;
-    background: var(--b);
-    background-size: cover;
-    margin-bottom: 20px;
-    --b:url(../img/ahorra-entre-amigas.png);
-}
-
-.content {
     width: 100%;
-    height: 100%;
+}
+
+#ldgOfertas .banners{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgba(253, 252, 252, 0.4);
-    opacity: 0;
-    transition: .5s;
-}
-
-.content h2, a {
-    color: black;
-    text-align: center;
-    font-size: medium;
-    font-weight: bold;
-}
-
-.compraCombos:hover .content {
-    background: linear-gradient(#FB859D,#FB9CB4,#FB6986,#f07b90);
-    color: white;
-    opacity: 1;
-}
-
-.amiagasAhorran:hover .content {
-    background: linear-gradient(#32B0E4,#1CA8DF,#3685B6,#4081C4);
-    color: white;
-    opacity: 1;
-}
-
-.servicios .tarjeta .descrip {
-    word-spacing: 1px;
-    text-align: justify;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 /*HTML ESHOP*/
 
-.card{
+.card {
     width: 18rem;
 }
-.card__shadow{
+
+.card__shadow {
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 /*HTML CONTACTO*/
-#fondoContacto{
+#fondoContacto {
     background: url(../img/fondo-contacto.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
-    
-}
-.contactForm{
-    display: flex;
-    width: 100%;
-    height: 100%;  
+
 }
 
-.contactForm form{
+.contactForm {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.contactForm form {
     display: flex;
     flex-direction: column;
     width: 70vw;
@@ -382,14 +219,15 @@ a {
     border-radius: 20px;
 }
 
-.contactForm h2{
+.contactForm h2 {
     color: white;
     text-align: center;
     font-size: 1.2rem;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 
-input, textarea{
+input,
+textarea {
     width: 80%;
     margin-bottom: 20px;
     padding: 7px;
@@ -397,20 +235,20 @@ input, textarea{
     border: none;
 }
 
-textarea{
+textarea {
     min-height: 100px;
     max-height: 200px;
     max-width: 80%;
 }
 
-#botonContactForm{
+#botonContactForm {
     background-color: #274547;
     color: white;
     font-weight: bold;
 }
 
-#botonContactForm:hover{
-    cursor: pointer ;
+#botonContactForm:hover {
+    cursor: pointer;
 }
 
 /*RESPONSIVE DESIGN --------     */
@@ -424,7 +262,7 @@ textarea{
         font-size: 2rem;
     }
 }
-    
+
 
 @media (max-width: 858px) {
 
@@ -504,24 +342,42 @@ textarea{
         font-size: small;
     }
 
-    /*HTML SERVICIOS*/
-
-    .service__tarjeta--azul {
-        margin-bottom: 10px;
+    #indexServices {
+        row-gap: 20px;
     }
 
-    .service__tarjeta--rosa {
-        margin-bottom: 10px;
+    /*HTML SERVICIOS*/
+
+    .portfolio__item-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+        
+    .portfolio__item-card p{
+        display: none;
     }
 
     /*HTML PROMOCIONES*/
 
-    .coverPromo {
-        background: url(../img/promos.png) no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: auto;
+    #ldgOfertas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 20px;
+        text-align: center;
+        row-gap: 20px;
+    }
+    
+    #ldgOfertas .banners{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        row-gap: 20px;
     }
 
 
