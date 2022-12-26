@@ -1,0 +1,55 @@
+/*HTML CONTACTO*/
+#fondoContacto {
+    background: url(../img/fondo-contacto.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    .contactForm {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 70vw;
+            height: 65vh;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 20px;
+
+            h2 {
+                color: white;
+                text-align: center;
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+
+            input,
+            textarea {
+                width: 80%;
+                margin-bottom: 20px;
+                padding: 7px;
+                font-size: 17px;
+                border: none;
+            }
+            textarea {
+                min-height: 100px;
+                max-height: 200px;
+                max-width: 80%;
+            }
+            #botonContactForm {
+                background-color: #274547;
+                color: white;
+                font-weight: bold;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

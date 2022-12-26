@@ -1,0 +1,42 @@
+/*ESTILOS DEL INDEX*/
+#ldgContent {
+    background: url(../img/concrete-wall-g6e777b7a7_1280.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+    .venta {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 70%;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 30px;
+        a button {
+            margin-top: 20px;
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+#indexServices {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #e8e8e8;
+    img {
+        border: #989DAC solid;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        box-shadow: $sombras;
+    }
+}
+
+#quienesSomos {
+    padding: 1rem;
+    text-align: center;
+}

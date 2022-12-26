@@ -1,384 +1,268 @@
-/*ESTILOS GENERALES DEL CSS*/
+@charset "UTF-8";
+/*VARIABLES*/
 /*RESETEO*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/*ESTILOS DEL HEADER*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 body {
-    font-family: 'Roboto', sans-serif;
-}
+  font-family: 'Roboto', sans-serif; }
 
+/*ESTILOS DEL HEADER*/
 header {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
-/*HEADER-MENU*/
-
-nav {
+  position: sticky;
+  top: 0;
+  z-index: 2; }
+  header nav {
     background: white;
     height: 120px;
-    width: 100%;
-}
-
-.enlace {
-    position: absolute;
-    padding: 20px 50px;
-}
-
-.logo {
-    height: 100px;
-}
-
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 100px;
-    margin: 0 5px;
-}
-
-nav ul li a {
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-li a.active,
-li a:hover {
-    background: black;
-    color: white;
-    font-weight: lighter;
-    transition: .5s;
-}
-
-.checkbtn {
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 150px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
+    width: 100%; }
+    header nav #check {
+      display: none; }
+    header nav .checkbtn {
+      font-size: 30px;
+      color: #fff;
+      float: right;
+      line-height: 150px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none; }
+    header nav .enlace {
+      position: absolute;
+      padding: 20px 50px; }
+      header nav .enlace .logo {
+        height: 100px; }
+    header nav ul {
+      float: right;
+      margin-right: 20px; }
+      header nav ul li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 5px; }
+        header nav ul li a {
+          color: black;
+          font-weight: bold;
+          font-size: 18px;
+          padding: 7px 13px;
+          border-radius: 3px;
+          text-transform: uppercase;
+          text-decoration: none; }
+          header nav ul li a:hover, header nav ul li a .active {
+            background: black;
+            color: white;
+            font-weight: lighter;
+            transition: .5s; }
 
 /*ESTILOS DEL FOOTER*/
 footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 100%;
-    height: 120px;
-}
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 120px; }
 
-/*HTML INDEX*/
-
-/*Estilos del Main Section*/
+/*ESTILOS DEL INDEX*/
 #ldgContent {
-    background: url(../img/concrete-wall-g6e777b7a7_1280.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 80px);
-}
-
-#ldgContent .venta {
+  background: url(../img/concrete-wall-g6e777b7a7_1280.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px); }
+  #ldgContent .venta {
     display: flex;
     flex-direction: column;
     width: 40%;
     height: 70%;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 30px;
-}
-
-#ldgContent .venta a button {
-    margin-top: 20px;
-    padding: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+    margin-left: 30px; }
+    #ldgContent .venta a button {
+      margin-top: 20px;
+      padding: 10px;
+      font-weight: bold;
+      text-transform: uppercase; }
 
 #indexServices {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #e8e8e8;
-}
-
-#indexServices img {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #e8e8e8; }
+  #indexServices img {
     border: #989DAC solid;
     border-radius: 100px;
     width: 200px;
     height: 200px;
-    box-shadow: 0 0 8px rgb(0 0 0 / 80%);
-}
+    box-shadow: 0 0 8px rgba(139, 139, 139, 0.8); }
 
 #quienesSomos {
-    padding: 1rem;
-    text-align: center;
-}
+  padding: 1rem;
+  text-align: center; }
 
 /*HTML SERVICIOS*/
-
-
-.portfolio__box{
-    display:flex;
-    flex-wrap: wrap;
-    width: 80vw;
-    height: 100%;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.portfolio__item{
+.portfolio__box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  height: 100%;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .portfolio__box .portfolio__item {
     display: flex;
     background-color: #fdd7e0;
-    box-shadow: 0 0 8px rgb(0 0 0 / 80%);
+    box-shadow: 0 0 8px rgba(139, 139, 139, 0.8);
     width: 500px;
     height: 200px;
     padding: 10px;
     column-gap: 10px;
-    border-radius: 10px;
-}
-
+    border-radius: 10px; }
 
 /*HTML PROMOCIONES*/
-
 #ldgOfertas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-#ldgOfertas .banners{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  #ldgOfertas .banners {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     margin-top: 30px;
-    margin-bottom: 20px;
-}
+    margin-bottom: 20px; }
 
 /*HTML ESHOP*/
-
 .card {
-    width: 18rem;
-}
-
-.card__shadow {
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-}
+  width: 18rem;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2); }
 
 /*HTML CONTACTO*/
 #fondoContacto {
-    background: url(../img/fondo-contacto.jpg) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-
-}
-
-.contactForm {
+  background: url(../img/fondo-contacto.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; }
+  #fondoContacto .contactForm {
     display: flex;
     width: 100%;
-    height: 100%;
-}
+    height: 100%; }
+    #fondoContacto .contactForm form {
+      display: flex;
+      flex-direction: column;
+      width: 70vw;
+      height: 65vh;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      border-radius: 20px; }
+      #fondoContacto .contactForm form h2 {
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 20px; }
+      #fondoContacto .contactForm form input,
+      #fondoContacto .contactForm form textarea {
+        width: 80%;
+        margin-bottom: 20px;
+        padding: 7px;
+        font-size: 17px;
+        border: none; }
+      #fondoContacto .contactForm form textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 80%; }
+      #fondoContacto .contactForm form #botonContactForm {
+        background-color: #274547;
+        color: white;
+        font-weight: bold; }
+        #fondoContacto .contactForm form #botonContactForm:hover {
+          cursor: pointer; }
 
-.contactForm form {
-    display: flex;
-    flex-direction: column;
-    width: 70vw;
-    height: 65vh;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    border-radius: 20px;
-}
-
-.contactForm h2 {
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-input,
-textarea {
-    width: 80%;
-    margin-bottom: 20px;
-    padding: 7px;
-    font-size: 17px;
-    border: none;
-}
-
-textarea {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 80%;
-}
-
-#botonContactForm {
-    background-color: #274547;
-    color: white;
-    font-weight: bold;
-}
-
-#botonContactForm:hover {
-    cursor: pointer;
-}
-
-/*RESPONSIVE DESIGN --------     */
-
+/*MEDIA QUERIES*/
 @media (max-width: 952px) {
-    .enlace {
-        padding-left: 20px;
-    }
-
-    nav ul li a {
-        font-size: 2rem;
-    }
-}
-
+  header nav .enlace {
+    padding-left: 20px; }
+  header nav ul li a {
+    font-size: 2rem; } }
 
 @media (max-width: 858px) {
-
-    /*Estilos del menú*/
-    .checkbtn {
-        display: block;
-    }
-
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 100px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    li a:hover,
-    li a.active {
-        background: none;
-        color: tomato;
-    }
-
-    #check:checked~ul {
-        left: 0;
-    }
-
-    #ldgContent .venta #secundSpeech {
-        display: none;
-    }
-
-    #indexServices {
-        flex-direction: column;
-    }
-
-    #quienesSomos h3 {
-        text-align: center;
-    }
-
-    #quienesSomos p {
-        text-align: justify;
-    }
-
-    /*HTML INDEX*/
-
-    /*Estilos del Main Section*/
-
-    #ldgContent .venta {
-        display: flex;
-        flex-direction: column;
-        width: 25%;
-        height: 60%;
-        align-items: flex-start;
-        justify-content: center;
-        margin-left: 20px;
-        font-size: small;
-        text-align: justify;
-    }
-
-    #ldgContent .venta a button {
-        margin-top: 10px;
-        padding: 10px;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: small;
-    }
-
-    #indexServices {
-        row-gap: 20px;
-    }
-
-    /*HTML SERVICIOS*/
-
-    .portfolio__item-card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-        
-    .portfolio__item-card p{
-        display: none;
-    }
-
-    /*HTML PROMOCIONES*/
-
-    #ldgOfertas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        margin-top: 20px;
-        text-align: center;
-        row-gap: 20px;
-    }
-    
-    #ldgOfertas .banners{
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        row-gap: 20px;
-    }
-
-
-}
+  /*Estilos del menú*/
+  header nav #check:checked ~ ul {
+    left: 0; }
+  header nav .checkbtn {
+    display: block; }
+  header nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s; }
+    header nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px; }
+      header nav ul li a {
+        font-size: 20px; }
+        header nav ul li a:hover,
+        header nav ul li a li a.active {
+          background: none;
+          color: tomato; }
+  /* Estilos del Index*/
+  #ldgContent .venta .venta {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 60%;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 20px;
+    font-size: 8px;
+    text-align: justify; }
+  #ldgContent .venta #secundSpeech {
+    display: none; }
+  #ldgContent .venta a button {
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: small; }
+  #indexServices {
+    flex-direction: column;
+    row-gap: 20px; }
+  #quienesSomos h3 {
+    text-align: center; }
+  #quienesSomos p {
+    text-align: justify; }
+  /*HTML SERVICIOS*/
+  .portfolio__item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .portfolio__item-card p {
+      display: none; }
+  /*HTML PROMOCIONES*/
+  #ldgOfertas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    row-gap: 20px; }
+    #ldgOfertas .banners {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      row-gap: 20px; } }
