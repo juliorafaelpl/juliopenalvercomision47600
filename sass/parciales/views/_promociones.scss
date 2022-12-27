@@ -1,4 +1,12 @@
 /*HTML PROMOCIONES*/
+.identPage{
+    h1{
+        @include titulo-rule;
+    }
+    h2{
+        @include subtitulo-rule;
+    }
+}
 #ldgOfertas {
     display: flex;
     flex-direction: column;

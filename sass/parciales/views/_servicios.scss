@@ -1,5 +1,14 @@
 /*HTML SERVICIOS*/
 
+.identPage{
+    h1{
+        @include titulo-rule;
+    }
+    h2{
+        @include subtitulo-rule;
+    }
+}
+
 .portfolio__box{
     display:flex;
     flex-wrap: wrap;

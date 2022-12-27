@@ -1,3 +1,16 @@
-/*VARIABLES*/
+//VARIABLES
 $sombras: 0 0 8px rgba(139, 139, 139, 0.8);
+
+//MIXIN
+@mixin titulo-rule{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+@mixin subtitulo-rule{
+    font-size: 24px;
+    text-align: center;
+}
 

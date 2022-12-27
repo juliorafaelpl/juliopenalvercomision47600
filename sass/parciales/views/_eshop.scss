@@ -1,4 +1,12 @@
 /*HTML ESHOP*/
+.identPage{
+    h1{
+        @include titulo-rule;
+    }
+    h2{
+        @include subtitulo-rule;
+    }
+}
 .card {
     width: 18rem;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
