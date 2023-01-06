@@ -165,6 +165,28 @@ footer {
     width: 100%;
     margin-top: 30px;
     margin-bottom: 20px; }
+    #ldgOfertas .banners .banners__prom {
+      width: 400px;
+      height: auto;
+      text-align: justify; }
+      #ldgOfertas .banners .banners__prom figure {
+        width: 400px;
+        height: auto; }
+        #ldgOfertas .banners .banners__prom figure img {
+          border-radius: 5px;
+          box-shadow: 4px 4px 6px grey; }
+        #ldgOfertas .banners .banners__prom figure figcaption {
+          padding: 10px;
+          font-size: 16px;
+          font-weight: bold;
+          font-style: italic;
+          letter-spacing: 0.6px; }
+  #ldgOfertas .promo__action {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+    letter-spacing: 0.5px; }
 
 /*HTML ESHOP*/
 .identPage h1 {
@@ -294,19 +316,16 @@ footer {
     .portfolio__item-card p {
       display: none; }
   /*HTML PROMOCIONES*/
-  #ldgOfertas {
-    display: flex;
+  #ldgOfertas .banners {
+    width: 100vw;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: white;
-    margin-top: 20px;
+    align-items: center; }
+    #ldgOfertas .banners .banners__prom figure figcaption {
+      font-size: 24px;
+      padding: 20px;
+      letter-spacing: 0.6px;
+      font-style: normal; }
+  #ldgOfertas .promo__action {
     text-align: center;
-    row-gap: 20px;
-    width: 100vw;
-    height: 100vh; }
-    #ldgOfertas .banners {
-      display: flex;
-      flex-direction: column;
-      margin-top: 20px;
-      row-gap: 20px; } }
+    font-size: 24px; } }
