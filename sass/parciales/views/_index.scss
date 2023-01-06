@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 80px);
+
     .venta {
         display: flex;
         flex-direction: column;
@@ -12,11 +13,20 @@
         align-items: flex-start;
         justify-content: center;
         margin-left: 30px;
+
         a button {
             margin-top: 20px;
             padding: 10px;
             font-weight: bold;
             text-transform: uppercase;
+
+            &:hover {
+                -webkit-transform: scale(0.97, 0.97);
+                -moz-transform: scale(0.97, 0.97);
+                -o-transform: scale(0.97, 0.97);
+                -ms-transform: scale(0.97, 0.97);
+                transform: scale(0.97, 0.97);
+            }
         }
     }
 }
@@ -27,12 +37,26 @@
     text-align: center;
     padding: 1.5rem;
     background-color: #e8e8e8;
+
     img {
         border: #989DAC solid;
         border-radius: 100px;
         width: 200px;
         height: 200px;
         box-shadow: $sombras;
+
+        &:hover {
+            -webkit-transform: scale(1.05, 1.05);
+            -moz-transform: scale(1.05, 1.05);
+            -o-transform: scale(1.05, 1.05);
+            -ms-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+        }
+
+    }
+
+    h3 {
+        padding-top: 0.5rem;
     }
 }
 

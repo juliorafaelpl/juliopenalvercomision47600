@@ -80,6 +80,12 @@ footer {
       padding: 10px;
       font-weight: bold;
       text-transform: uppercase; }
+      #ldgContent .venta a button:hover {
+        -webkit-transform: scale(0.97, 0.97);
+        -moz-transform: scale(0.97, 0.97);
+        -o-transform: scale(0.97, 0.97);
+        -ms-transform: scale(0.97, 0.97);
+        transform: scale(0.97, 0.97); }
 
 #indexServices {
   display: flex;
@@ -93,6 +99,14 @@ footer {
     width: 200px;
     height: 200px;
     box-shadow: 0 0 8px rgba(139, 139, 139, 0.8); }
+    #indexServices img:hover {
+      -webkit-transform: scale(1.05, 1.05);
+      -moz-transform: scale(1.05, 1.05);
+      -o-transform: scale(1.05, 1.05);
+      -ms-transform: scale(1.05, 1.05);
+      transform: scale(1.05, 1.05); }
+  #indexServices h3 {
+    padding-top: 0.5rem; }
 
 #quienesSomos {
   padding: 1rem;
@@ -164,7 +178,12 @@ footer {
 
 .card {
   width: 18rem;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2); }
+  border: none; }
+  .card .card-img-top {
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px grey; }
+  .card .card-body .card-text span {
+    font-weight: bold; }
 
 /*HTML CONTACTO*/
 #fondoContacto {
@@ -180,35 +199,45 @@ footer {
       display: flex;
       flex-direction: column;
       width: 70vw;
-      height: 65vh;
+      height: 75vh;
       margin: auto;
       justify-content: center;
       align-items: center;
       background-color: rgba(0, 0, 0, 0.7);
       padding: 10px 20px;
-      border-radius: 20px; }
+      border-radius: 20px;
+      font-family: 'Roboto', sans-serif; }
       #fondoContacto .contactForm form h1 {
         color: white;
         text-align: center;
         font-size: 1.2rem;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        padding-top: 20px; }
       #fondoContacto .contactForm form input,
       #fondoContacto .contactForm form textarea {
-        width: 80%;
+        width: 85%;
         margin-bottom: 20px;
-        padding: 7px;
+        padding: 10px;
         font-size: 17px;
         border: none; }
       #fondoContacto .contactForm form textarea {
         min-height: 100px;
         max-height: 200px;
-        max-width: 80%; }
+        max-width: 85%;
+        font-family: 'Roboto', sans-serif; }
       #fondoContacto .contactForm form #botonContactForm {
         background-color: #274547;
         color: white;
-        font-weight: bold; }
+        font-weight: bold;
+        margin: 20px; }
         #fondoContacto .contactForm form #botonContactForm:hover {
-          cursor: pointer; }
+          cursor: pointer;
+          -webkit-transform: scale(0.97, 0.97);
+          -moz-transform: scale(0.97, 0.97);
+          -o-transform: scale(0.97, 0.97);
+          -ms-transform: scale(0.97, 0.97);
+          transform: scale(0.97, 0.97);
+          color: #E9B8B4; }
 
 /*MEDIA QUERIES*/
 @media (max-width: 952px) {

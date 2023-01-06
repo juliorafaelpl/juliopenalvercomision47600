@@ -9,6 +9,16 @@
 }
 .card {
     width: 18rem;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    .card-img-top{
+        border-radius: 10px;
+        box-shadow: 4px 4px 6px grey;
+    }
+    .card-body{
+        .card-text span{
+            font-weight: bold;
+        }
+    }
 }
+
 
